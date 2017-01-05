@@ -1,0 +1,334 @@
+/**
+ * Created by liaohui1080 on 14/10/24.
+ */
+[
+    {
+        "kuangqu": {
+            "x": 25,
+            "y": 17,
+            "beijing": "kuangqu__22.png",
+            "id": "39"
+
+        },
+        "zuobiao": {
+            "x": 50,
+            "y": 40
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "塔拉壕矿"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 32,
+            "y": 30,
+            "beijing": "kuangqu__23.png",
+            "id": "36"
+        },
+        "zuobiao": {
+            "x": 60,
+            "y": 30
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 55,
+            "name": "诚意煤矿"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 29,
+            "y": 43,
+            "beijing": "kuangqu__24.png",
+            "id": "44"
+        },
+        "zuobiao": {
+            "x": 40,
+            "y": 50
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "白家梁煤矿"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 50,
+            "y": 31,
+            "beijing": "kuangqu__25.png",
+            "id": "54"
+        },
+        "zuobiao": {
+            "x": 55,
+            "y": 30
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "安家坡煤矿"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 72,
+            "y": 31,
+            "beijing": "kuangqu__26.png",
+            "id": "29"
+        },
+        "zuobiao": {
+            "x": 50,
+            "y": 50
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "酸刺沟煤矿"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 76,
+            "y": 12,
+            "beijing": "kuangqu__27.png",
+            "id": "35"
+        },
+        "zuobiao": {
+            "x": 50,
+            "y": 50
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "阳湾沟煤矿"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 57,
+            "y": 52,
+            "beijing": "kuangqu__28.png",
+            "id": "32"
+        },
+        "zuobiao": {
+            "x": 60,
+            "y": 50
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "宏景塔一矿"
+        }
+
+    },
+
+    {
+        "kuangqu": {
+            "x": 26,
+            "y": 58,
+            "beijing": "kuangqu__29.png",
+            "id": "33"
+        },
+        "zuobiao": {
+            "x": 25,
+            "y": 25
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "大地精煤矿"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 43,
+            "y": 58,
+            "beijing": "kuangqu__30.png",
+            "id": "37"
+        },
+        "zuobiao": {
+            "x": 50,
+            "y": 50
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 55,
+            "name": "宝山煤矿"
+        }
+
+    },
+
+    {
+        "kuangqu": {
+            "x": 59,
+            "y": 66,
+            "beijing": "kuangqu__31.png",
+            "id": "30"
+        },
+        "zuobiao": {
+            "x": 50,
+            "y": 38
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "纳林庙二矿"
+        }
+
+    },
+    /* {
+     "kuangqu": {
+     "x": 60,
+     "y": 74,
+     "beijing": "kuangqu__32.png",
+     "id": "35"
+     },
+     "zuobiao": {
+     "x": 60,
+     "y": 50
+     },
+     "name": {
+     "x": null,
+     "y": null,
+     "kuan": 40,
+     "name": "矿名字"
+     }
+
+     },*/
+    /*
+     {
+     "kuangqu": {
+     "x": 55,
+     "y": 73,
+     "beijing": "kuangqu__33.png",
+     "id": "57"
+     },
+     "zuobiao": {
+     "x": 47,
+     "y": 22
+     },
+     "name": {
+     "x": null,
+     "y": null,
+     "kuan": 40,
+     "name": "矿名字"
+     }
+
+     },*/
+    {
+        "kuangqu": {
+            "x": 62,
+            "y": 81,
+            "beijing": "kuangqu__34.png",
+            "id": "34"
+        },
+        "zuobiao": {
+            "x": 50,
+            "y": 50
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 40,
+            "name": "凯达矿"
+        }
+
+    },
+
+    {
+        "kuangqu": {
+            "x": 0,
+            "y": 70,
+            "beijing": "kuangqu__35.png",
+            "id": "42"
+        },
+        "zuobiao": {
+            "x": 70,
+            "y": 50
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 40,
+            "name": "红庆河"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 24,
+            "y": 77,
+            "beijing": "kuangqu__36.png",
+            "id": "57"
+        },
+        "zuobiao": {
+            "x": 50,
+            "y": 50
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 55,
+            "name": "苏家壕矿"
+        }
+
+    },
+
+    {
+        "kuangqu": {
+            "x": 42,
+            "y": 74,
+            "beijing": "kuangqu__37.png",
+            "id": "43"
+        },
+        "zuobiao": {
+            "x": 60,
+            "y": 30
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 65,
+            "name": "纳林庙一矿"
+        }
+
+    },
+    {
+        "kuangqu": {
+            "x": 30,
+            "y": 68,
+            "beijing": "kuangqu__38.png",
+            "id": "38"
+        },
+        "zuobiao": {
+            "x": 35,
+            "y": 40
+        },
+        "name": {
+            "x": null,
+            "y": null,
+            "kuan": 55,
+            "name": "丁家渠矿"
+        }
+
+    }]
+

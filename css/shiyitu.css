@@ -1,0 +1,414 @@
+/*布局*/
+/*左自动  右固定*/
+/*end 布局*/
+/*
+定义圆角
+@radius 圆角大小
+*/
+/*角标*/
+/* line 50, shiyitu.less */
+html {
+  overflow: hidden;
+}
+/* line 54, shiyitu.less */
+body {
+  border-top: #0071BB 1px solid;
+  font-family: 'Microsoft Yahei', 'MSYH', '微软雅黑';
+}
+/* line 62, shiyitu.less */
+.tishi-icon {
+  width: 16px;
+  height: 16px;
+}
+/* line 66, shiyitu.less */
+.tishi-icon div {
+  margin-top: 5px;
+  *margin-top: 1px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/tishi.png);
+  background-repeat: no-repeat;
+}
+/* line 77, shiyitu.less */
+.zhengchang {
+  background-position: 0px 0px;
+}
+/* line 83, shiyitu.less */
+.jinggao {
+  background-position: 0px -19px;
+}
+/* line 88, shiyitu.less */
+.cuowu {
+  background-position: 0px -38px;
+}
+/* line 93, shiyitu.less */
+.tingzhi {
+  background-position: 0px -57px;
+}
+/* line 103, shiyitu.less */
+.zuobiao {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+}
+/* line 115, shiyitu.less */
+.zuobiao .zuobiao-dian {
+  position: absolute;
+  width: 47px;
+  height: 41.5px;
+  top: 0px;
+  left: 0px;
+  /*  background-image: url(../images/zuobiao.png);
+    background-position: center 0px;
+    background-repeat: no-repeat;*/
+}
+/* line 127, shiyitu.less */
+.zuobiao .zuobiao-dian .kuang-name {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  font-size: 12px;
+  padding: 0px 5px;
+  background: #FFFFFF;
+  border: 1px #0071BA solid;
+  line-height: 20px;
+  top: -30px;
+  left: -5px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 141, shiyitu.less */
+.zuobiao .zuobiao-dian .kuang-name .tishi {
+  width: 170px;
+  height: 100px;
+  background-color: #ffffff;
+  border: 1px #0071BA solid;
+  position: absolute;
+  top: 19px;
+  left: -1px;
+  overflow: auto;
+  padding: 5px;
+  font-size: 12px;
+  display: none;
+  z-index: 100;
+  text-align: left;
+}
+/* line 156, shiyitu.less */
+.zuobiao .zuobiao-dian .kuang-name:hover {
+  background: #fffcef;
+}
+/* line 163, shiyitu.less */
+.zuobiao-bianse {
+  background-position: center -50px;
+}
+/* line 166, shiyitu.less */
+.zuobiao-bianse-xinjiang {
+  background-position: center -65px;
+}
+/*跟随鼠标显示坐标信息*/
+/* line 172, shiyitu.less */
+.zuobiao-xianshi {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-size: 12px;
+}
+/* line 6, shiyitu.less */
+.s-buju .zuo {
+  float: left;
+  width: 100%;
+}
+/* line 10, shiyitu.less */
+.s-buju .zuo-neirong {
+  margin-right: 256px;
+}
+/* line 13, shiyitu.less */
+.s-buju .you {
+  float: right;
+  width: 256px;
+  margin-left: -256px;
+}
+/* line 182, shiyitu.less */
+.s-buju .zuo .zuo-neirong {
+  position: relative;
+  /*其他煤矿 矿区图*/
+}
+/* line 185, shiyitu.less */
+.s-buju .zuo .zuo-neirong .biaoti {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  background: -moz-linear-gradient(50% 100% 90deg, #d1e6f1 0%, #d9eaf3 37.73%, #eef5f9 95.32%, #f0f6fa 100%);
+  background: -webkit-linear-gradient(90deg, #d1e6f1 0%, #d9eaf3 37.73%, #eef5f9 95.32%, #f0f6fa 100%);
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0, #d1e6f1), color-stop(0.3773, #d9eaf3), color-stop(0.9532, #eef5f9), color-stop(1, #f0f6fa));
+  background: -o-linear-gradient(90deg, #d1e6f1 0%, #d9eaf3 37.73%, #eef5f9 95.32%, #f0f6fa 100%);
+  background: -ms-linear-gradient(90deg, #d1e6f1 0%, #d9eaf3 37.73%, #eef5f9 95.32%, #f0f6fa 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E6F1', endColorstr='#F0F6FA' ,GradientType=0)";
+  background: linear-gradient(0deg, #d1e6f1 0%, #d9eaf3 37.73%, #eef5f9 95.32%, #f0f6fa 100%);
+  border-style: Solid;
+  border-color: #89B0CA;
+  border-color: #89b0ca;
+  border-width: 1px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F6FA', endColorstr='#D1E6F1', GradientType=0);
+}
+/* line 203, shiyitu.less */
+.s-buju .zuo .zuo-neirong .biaoti div {
+  margin-left: 5px;
+  float: left;
+}
+/* line 207, shiyitu.less */
+.s-buju .zuo .zuo-neirong .biaoti a {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  line-height: 22px;
+  float: left;
+  font-size: 12px;
+  right: 10px;
+  padding: 0px 5px;
+  top: 7px;
+  color: #0089dc;
+}
+/* line 220, shiyitu.less */
+.s-buju .zuo .zuo-neirong .biaoti a:hover {
+  color: #004f82;
+}
+/* line 227, shiyitu.less */
+.s-buju .zuo .zuo-neirong .qita-kuangqu {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #ebebeb;
+  border: 1px #6788af solid;
+  text-align: center;
+  line-height: 40px;
+}
+/* line 241, shiyitu.less */
+.s-buju .you .you-neirong {
+  background-color: #F4F4F4;
+  border-left: 1px #8eb0ce solid;
+  position: relative;
+  z-index: 20;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+/* line 248, shiyitu.less */
+.s-buju .you .you-neirong .biaoti-jituan {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #ffffff;
+  border-bottom: #0071BB 1px solid;
+  background: -moz-linear-gradient(50% 100% 90deg, #089fdb 0%, #15b9e5 100%);
+  background: -webkit-linear-gradient(90deg, #089fdb 0%, #15b9e5 100%);
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0, #089fdb), color-stop(1, #15b9e5));
+  background: -o-linear-gradient(90deg, #089fdb 0%, #15b9e5 100%);
+  background: -ms-linear-gradient(90deg, #089fdb 0%, #15b9e5 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#089FDB', endColorstr='#15B9E5' ,GradientType=0)";
+  background: linear-gradient(0deg, #089fdb 0%, #15b9e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15B9E5', endColorstr='#089FDB', GradientType=0);
+}
+/* line 263, shiyitu.less */
+.s-buju .you .you-neirong .biaoti-jituan div {
+  padding: 0px 10px;
+  position: relative;
+}
+/* line 267, shiyitu.less */
+.s-buju .you .you-neirong .biaoti-jituan div span {
+  display: inline-block;
+}
+/* line 270, shiyitu.less */
+.s-buju .you .you-neirong .biaoti-jituan div .xiaoxishu-jiaobiao {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  width: 100px;
+  height: 36px;
+}
+/* line 284, shiyitu.less */
+.s-buju .you .you-neirong .tishi-zong {
+  height: 40px;
+  background-color: #ffffff;
+  line-height: 40px;
+  padding-left: 5px;
+  font-size: 12px;
+  border-bottom: 1px #e0e0e0 solid;
+}
+/* line 291, shiyitu.less */
+.s-buju .you .you-neirong .tishi-zong li {
+  float: left;
+  margin-right: 5px;
+  width: 78px;
+}
+/* line 296, shiyitu.less */
+.s-buju .you .you-neirong .tishi-zong li .tishi-icon {
+  margin-right: 5px;
+}
+/* line 299, shiyitu.less */
+.s-buju .you .you-neirong .tishi-zong li span {
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 304, shiyitu.less */
+.s-buju .you .you-neirong .tishi-zong li .tishi {
+  width: 245px;
+  height: 90px;
+  background-color: #ffffff;
+  border: 1px #8eb0ce solid;
+  position: absolute;
+  top: 74px;
+  left: -1px;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 5px;
+  font-size: 12px;
+  display: none;
+  z-index: 100;
+}
+/* line 319, shiyitu.less */
+.s-buju .you .you-neirong .tishi-zong li:hover {
+  background-color: #faf2e7;
+}
+/* line 326, shiyitu.less */
+.s-buju .you .you-neirong .meikuang {
+  position: relative;
+  padding: 0px 8px;
+  height: auto;
+  overflow-y: auto;
+}
+/* line 333, shiyitu.less */
+.s-buju .you .you-neirong .meikuang .tishi-text-zong {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: #ffffff;
+  min-height: 70px;
+  height: auto;
+  border: 1px #E6E6E6 solid;
+  font-size: 12px;
+  padding: 9px;
+  color: #333333;
+  line-height: 1.5;
+  margin: 10px 0px;
+}
+/* line 348, shiyitu.less */
+.s-buju .you .you-neirong .meikuang li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+/* line 352, shiyitu.less */
+.s-buju .you .you-neirong .meikuang li .zhuangtai {
+  position: relative;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 5px;
+  font-size: 13px;
+  background: -moz-linear-gradient(50% 100% 90deg, #d1e5f3 0%, #ecf4fa 100%);
+  background: -webkit-linear-gradient(90deg, #d1e5f3 0%, #ecf4fa 100%);
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0, #d1e5f3), color-stop(1, #ecf4fa));
+  background: -o-linear-gradient(90deg, #d1e5f3 0%, #ecf4fa 100%);
+  background: -ms-linear-gradient(90deg, #d1e5f3 0%, #ecf4fa 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E5F3', endColorstr='#ECF4FA' ,GradientType=0)";
+  background: linear-gradient(0deg, #d1e5f3 0%, #ecf4fa 100%);
+  border-style: Solid;
+  border-color: #8AB1CB;
+  border-color: #8ab1cb;
+  border-width: 1px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECF4FA', endColorstr='#D1E5F3', GradientType=0);
+}
+/* line 376, shiyitu.less */
+.s-buju .you .you-neirong .meikuang li .zhuangtai .mk-name {
+  width: 200px;
+  display: inline-block;
+}
+/* line 382, shiyitu.less */
+.s-buju .you .you-neirong .meikuang li .zhuangtai .mk-tishi {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  *top: 5px;
+}
+/* line 387, shiyitu.less */
+.s-buju .you .you-neirong .meikuang li .zhuangtai .mk-tishi span {
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 395, shiyitu.less */
+.s-buju .you .you-neirong .meikuang li p {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: #ffffff;
+  min-height: 70px;
+  height: auto;
+  border: 1px #E6E6E6 solid;
+  margin-top: 3px;
+  font-size: 12px;
+  padding: 9px;
+  color: #333333;
+  line-height: 1.5;
+  display: none;
+}
+/*消息提醒*/
+/* line 418, shiyitu.less */
+.xiaoxi-xianshi {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: absolute;
+  width: 300px;
+  height: 105px;
+  *height: 113px;
+  background: #E5E5E5;
+  background: #e5e5e5;
+  border-style: Solid;
+  border-color: #666666;
+  border-width: 1px;
+  bottom: 10px;
+  right: 270px;
+}
+/* line 432, shiyitu.less */
+.xiaoxi-xianshi li {
+  margin: 10px;
+}
+/* line 435, shiyitu.less */
+.xiaoxi-xianshi ol {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  *top: 10px;
+  color: #f00217;
+}
+/* line 443, shiyitu.less */
+.xiaoxi-xianshi .biaoti {
+  font-size: 13px;
+}
+/* line 446, shiyitu.less */
+.xiaoxi-xianshi .neirong {
+  height: 50px;
+  background: #FFFFFF;
+  background: #ffffff;
+  border-style: Solid;
+  border-color: #CBCBCB;
+  border-color: #cbcbcb;
+  border-width: 1px;
+  font-size: 12px;
+  padding: 5px;
+}

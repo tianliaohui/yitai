@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link type="text/css" rel="stylesheet" href="css/chushihua.css">
+    <link type="text/css" rel="stylesheet" href="css/shiyitu.css">
+    <link type="text/css" rel="stylesheet" href="css/ali_icon/iconfont.css">
+
+
+</head>
+
+
+<body>
+<div class="s-buju">
+    <div class="zuo">
+        <div class="zuo-neirong window_height">
+            <div class="biaoti">
+                <div>集团公司提示</div>
+                <a href="#shuaxin" title="正在刷新" id="data_shuaxin">刷新</a>
+            </div>
+
+            <!--东胜市区标示-->
+            <div class="zuobiao diqu-xinjiang" style="top:15%; left: 14.5%; display: none" >
+
+                <div class="zuobiao-dian" style="background-image: none;">
+                    <span class="iconfont" style="font-weight: bold; font-size: 30px;color: #000000">&#xe6c1;</span>
+
+                    <div class="kuang-name" style="width:55px; top:40px; left:-18px;">东胜市区
+                    </div>
+                </div>
+            </div>
+            <!--end 东胜市区标示-->
+
+
+            <!--新疆市区标示-->
+            <div class="zuobiao  diqu-dongsheng" style="top:30%; left: 14.5%; display: none" >
+
+                <div class="zuobiao-dian" style="background-image: none;">
+                    <span class="iconfont" style="font-weight: bold; font-size: 30px;color: #000000">&#xe6c1;</span>
+
+                    <div class="kuang-name" style="width:55px; top:40px; left:-18px;">新疆市区
+                    </div>
+                </div>
+            </div>
+            <!--end 新疆市区标示-->
+
+            <div id="rongqi_kuangqu">
+                正在加载矿区模板....
+            </div>
+
+            <img src="images/ditu5.png" class="ditu-img" id="ditu">
+
+
+            <div class="zuobiao-xianshi">
+                <!--鼠标跟随 坐标百分比-->
+            </div>
+
+            <div class="qita-kuangqu">
+                <a href="#/qihuanDiqu/xinjiang" class="diqu-xinjiang"> 新疆矿区</a>
+                <a href="#/qihuanDiqu/dongsheng" class="diqu-dongsheng"> 东胜矿区</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="you">
+        <div class="you-neirong window_height">
+
+            <div class="biaoti-jituan">
+                <div>
+                    <span>实时信息</span>
+                    <a href="#" >
+                        <img src="images/tiaozhuang.png" class="xiaoxishu-jiaobiao">
+                    </a>
+                </div>
+            </div>
+
+            <ul class="tishi-zong" id="rongqi_baojing_zong">
+                正在加载模板...
+            </ul>
+
+            <ul class="meikuang clearfix">
+                <div class="tishi-text-zong" id="miaoshu_jituan">
+                    集团公司总状态集团公司总状态集团公司总状态集团公司总状态集团公司总状态
+                    集团公司
+
+                </div>
+
+                <div id="rongqi_meikuang">
+                    正在加载模板...
+
+                </div>
+
+            </ul>
+
+
+            <!--消息提醒-->
+
+            <ul class="xiaoxi-xianshi">
+                <ol class="guanbi">⤫</ol>
+                <li class="biaoti">消息标题</li>
+                <li class="neirong">
+                    消息内容
+                </li>
+            </ul>
+
+            <!--end 消息提醒-->
+
+
+        </div>
+    </div>
+</div>
+
+<!--矿区模板-->
+<script type="text/template" id="moban_kuangqu">
+
+    <%_.each(moban_data, function(key , value){%>
+    <div class="zuobiao " id="kuangqu_<%=key.kuangqu.id%>"
+            style="
+            top:<%=key.kuangqu.y%>% ;
+            left: <%=key.kuangqu.x%>%;
+            background-image: url(images/kuangqu/<%=key.kuangqu.beijing%>);
+            width:<%=key.kuangqu.width%>px;
+            height:<%=key.kuangqu.height%>px;
+    ">
+
+        <div class="zuobiao-dian" style="top:<%=key.zuobiao.y%>px ; left: <%=key.zuobiao.x%>px;">
+
+
+                <div class="kuang-name" style="
+            width:<%=key.name.kuan%>px;
+            top:<%=key.name.y%>px;
+            left:<%=key.name.x%>px;
+
+            "><a href="<%=key.baojing.url%>" target="_blank"><%=key.name.name%></a>
+                    <div class="tishi" style="top:<%=key.tishi.y%>px; left:<%=key.tishi.x%>px;">
+                        <%=key.baojing.miaoshuKuangqu%>
+                    </div>
+                </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <%})%>
+</script>
+
+<!--右侧煤矿-->
+<script type="text/template" id="moban_meikuang">
+    <%_.each(moban_data, function(key , value){%>
+    <li id="meikuang_<%=key.kuangqu.id%>">
+
+        <div class="zhuangtai">
+                <span class="mk-name">
+                     <a href="<%=key.baojing.url%>" target="_blank"><%=key.name.name%>
+                     </a>
+                     <%if (key.baojing.baojingshu){
+               %>
+                (<%=key.baojing.baojingshu%>)
+                <%
+                }%>
+                </span>
+
+
+            <span class="mk-tishi">
+
+
+                <span class="tishi-icon">
+                    <div class="tishi-shanyao"></div>
+                </span>
+            </span>
+        </div>
+
+        <p>
+            <%=key.baojing.miaoshu%>
+        </p>
+
+    </li>
+    <%})%>
+</script>
+
+<!--报警数统计-->
+<script type="text/template" id="moban_baojing_zong">
+
+    <li>
+        <span class="tishi-icon">
+            <div class="zhengchang"></div>
+        </span>
+        <span style="color: #009145">正常<u>(<%=zhengchang%>)</u></span>
+
+        <div class="tishi">
+            报警数报警数报警数报警
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+            报警数报警数报警数报警数
+        </div>
+    </li>
+    <li>
+        <span class="tishi-icon">
+            <div class="jinggao"></div>
+        </span>
+        <span style="color: #F6921E">警告<u>(<%=jinggao%>)</u></span>
+        <div class="tishi">
+            报警2
+        </div>
+    </li>
+
+    <li>
+        <span class="tishi-icon">
+            <div class="cuowu"></div>
+        </span>
+        <span style="color: #EC1C24">错误 <span>(<%=cuowu%>)</span></span>
+        <div class="tishi">
+            报警数3报警数据3
+        </div>
+    </li>
+</script>
+
+
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+<script type="text/javascript" src="zuobiao.js"></script>
+
+<script type="text/javascript" src="js/js.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

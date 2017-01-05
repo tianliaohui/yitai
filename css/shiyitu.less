@@ -1,0 +1,459 @@
+/*布局*/
+
+/*左自动  右固定*/
+.div-2-zuo-auto-you-guding(@you_kuan:200px , @bianju:10px) {
+
+  .zuo {
+    float: left;
+    width: 100%;
+  }
+  .zuo-neirong {
+    margin-right: @you_kuan + @bianju;
+  }
+  .you {
+    float: right;
+    width: @you_kuan;
+    margin-left: -@you_kuan
+  }
+
+}
+
+/*end 布局*/
+
+/*
+定义圆角
+@radius 圆角大小
+*/
+.round(@radius:5px) {
+
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+
+}
+
+/*角标*/
+.jiaobiao(@radius:5px) {
+  width: @radius;
+  height: @radius;
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  background: #EC1C24;
+  background: rgba(236, 28, 36, 1);
+  border-style: Solid;
+  border-color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 1);
+  border-width: 2px;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  //background-color: #f00217;
+  border-top: #0071BB 1px solid;
+  font-family: 'Microsoft Yahei', 'MSYH', '微软雅黑';
+
+}
+
+//三色提示圆点
+.tishi-icon {
+  width: 16px;
+  height: 16px;
+
+  div {
+    margin-top: 5px;
+    *margin-top: 1px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/tishi.png);
+    background-repeat: no-repeat;
+  }
+
+}
+
+.zhengchang {
+  //background-position: 0px 0px;
+  background-position: 0px 0px;
+
+}
+
+.jinggao {
+  //background-position: 0px -32px;
+  background-position: 0px -19px;
+}
+
+.cuowu {
+  //background-position: 0px -64px;
+  background-position: 0px -38px;
+}
+
+.tingzhi {
+  //background-position: 0px -64px;
+  background-position: 0px -57px;
+}
+
+//end 三色提示圆点
+
+
+
+
+.zuobiao {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  //background-color: #5bf084;
+  //border:1px #f00217 solid;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+
+  .zuobiao-dian {
+    position: absolute;
+    width: 47px;
+    height: 41.5px;
+    top: 0px;
+    left: 0px;
+  /*  background-image: url(../images/zuobiao.png);
+    background-position: center 0px;
+    background-repeat: no-repeat;*/
+
+
+
+    .kuang-name {
+      .round(3px);
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      font-size: 12px;
+      padding: 0px 5px;
+      background: #FFFFFF;
+      border: 1px #0071BA solid;
+      line-height: 20px;
+      top: -30px;
+      left: -5px;
+      text-align: center;
+      cursor: pointer;
+      .tishi{
+        width:170px;
+        height: 100px;
+        background-color: #ffffff;
+        border: 1px #0071BA solid;
+        position: absolute;
+        top:19px;
+        left: -1px;
+        overflow: auto;
+        padding: 5px;
+        font-size: 12px;
+        display: none;
+        z-index: 100;
+        text-align: left;
+      }
+      &:hover{
+        background: #fffcef;
+      }
+    }
+  }
+
+}
+.zuobiao-bianse {
+  background-position: center -50px;
+}
+.zuobiao-bianse-xinjiang {
+  background-position: center -65px;
+}
+
+
+/*跟随鼠标显示坐标信息*/
+.zuobiao-xianshi {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-size: 12px;
+}
+
+.s-buju {
+  .div-2-zuo-auto-you-guding(256px, 0px);
+  .zuo {
+    .zuo-neirong {
+      //background-color: #f0ad4e;
+      position: relative;
+      .biaoti {
+        width: 100%;
+        height: 34px;
+        line-height: 34px;
+
+        background: -moz-linear-gradient(50% 100% 90deg, rgba(209, 230, 241, 1) 0%, rgba(217, 234, 243, 1) 37.73%, rgba(238, 245, 249, 1) 95.32%, rgba(240, 246, 250, 1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(209, 230, 241, 1) 0%, rgba(217, 234, 243, 1) 37.73%, rgba(238, 245, 249, 1) 95.32%, rgba(240, 246, 250, 1) 100%);
+        background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0, rgba(209, 230, 241, 1)), color-stop(0.3773, rgba(217, 234, 243, 1)), color-stop(0.9532, rgba(238, 245, 249, 1)), color-stop(1, rgba(240, 246, 250, 1)));
+        background: -o-linear-gradient(90deg, rgba(209, 230, 241, 1) 0%, rgba(217, 234, 243, 1) 37.73%, rgba(238, 245, 249, 1) 95.32%, rgba(240, 246, 250, 1) 100%);
+        background: -ms-linear-gradient(90deg, rgba(209, 230, 241, 1) 0%, rgba(217, 234, 243, 1) 37.73%, rgba(238, 245, 249, 1) 95.32%, rgba(240, 246, 250, 1) 100%);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E6F1', endColorstr='#F0F6FA' ,GradientType=0)";
+        background: linear-gradient(0deg, rgba(209, 230, 241, 1) 0%, rgba(217, 234, 243, 1) 37.73%, rgba(238, 245, 249, 1) 95.32%, rgba(240, 246, 250, 1) 100%);
+        border-style: Solid;
+        border-color: #89B0CA;
+        border-color: rgba(137, 176, 202, 1);
+        border-width: 1px;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F6FA', endColorstr='#D1E6F1', GradientType=0);
+
+        div {
+          margin-left: 5px;
+          float: left;
+        }
+        a {
+          position: absolute;
+          display: inline-block;
+          width: auto;
+          line-height: 22px;
+          float: left;
+          font-size: 12px;
+          right: 10px;
+          padding: 0px 5px;
+          //background-color: #0089dc;
+          //border: 1px #426697 solid;
+          top: 7px;
+          color: #0089dc;
+          &:hover {
+            color: #004f82;
+          }
+        }
+      }
+
+      /*其他煤矿 矿区图*/
+      .qita-kuangqu {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
+        height: 40px;
+        background-color: #ebebeb;
+        border: 1px #6788af solid;
+        text-align: center;
+        line-height: 40px;
+      }
+    }
+  }
+  .you {
+    .you-neirong {
+      background-color: #F4F4F4;
+      border-left: 1px #8eb0ce solid;
+      position: relative;
+      z-index: 20;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      .biaoti-jituan {
+
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        color: #ffffff;
+        border-bottom: #0071BB 1px solid;
+        background: -moz-linear-gradient(50% 100% 90deg, rgba(8, 159, 219, 1) 0%, rgba(21, 185, 229, 1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(8, 159, 219, 1) 0%, rgba(21, 185, 229, 1) 100%);
+        background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0, rgba(8, 159, 219, 1)), color-stop(1, rgba(21, 185, 229, 1)));
+        background: -o-linear-gradient(90deg, rgba(8, 159, 219, 1) 0%, rgba(21, 185, 229, 1) 100%);
+        background: -ms-linear-gradient(90deg, rgba(8, 159, 219, 1) 0%, rgba(21, 185, 229, 1) 100%);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#089FDB', endColorstr='#15B9E5' ,GradientType=0)";
+        background: linear-gradient(0deg, rgba(8, 159, 219, 1) 0%, rgba(21, 185, 229, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15B9E5', endColorstr='#089FDB', GradientType=0);
+        div {
+          padding: 0px 10px;
+          position: relative;
+
+          span {
+            display: inline-block;
+          }
+          .xiaoxishu-jiaobiao {
+
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+           // background-image: url(../images/tiaozhuang.png);
+            width: 100px;
+            height: 36px;
+          }
+        }
+      }
+      .tishi-zong {
+        height: 40px;
+        background-color: #ffffff;
+        line-height: 40px;
+        padding-left: 5px;
+        font-size: 12px;
+        border-bottom: 1px #e0e0e0 solid;
+        li {
+          float: left;
+          margin-right: 5px;
+          width: 78px;
+          //background-color: #f00217;
+          .tishi-icon {
+            margin-right: 5px;
+          }
+          span {
+            display: inline-block;
+            cursor: pointer;
+          }
+
+          .tishi{
+            width:245px;
+            height: 90px;
+            background-color: #ffffff;
+            border: 1px #8eb0ce solid;
+            position: absolute;
+            top:74px;
+            left:-1px;
+            line-height: 1.5;
+            overflow: auto;
+            padding:5px;
+            font-size: 12px;
+            display: none;
+            z-index: 100;
+          }
+          &:hover{
+            background-color: #faf2e7;
+
+          }
+        }
+      }
+
+      .meikuang {
+        position: relative;
+        padding: 0px 8px;
+        height: auto;
+        overflow-y: auto;
+        //background-color: #5bc0f0;
+
+        .tishi-text-zong {
+          .round(3px);
+          background-color: #ffffff;
+          min-height: 70px;
+          height: auto;
+          border: 1px #E6E6E6 solid;
+          font-size: 12px;
+          padding: 9px;
+          color: #333333;
+          line-height: 1.5;
+          margin: 10px 0px;
+
+
+        }
+
+        li {
+          margin-bottom: 10px;
+          //background-color: #f0ad4e;
+          cursor: pointer;
+          .zhuangtai {
+            position: relative;
+            //background-color: #f0e90e;
+            .round(3px);
+            cursor: pointer;
+            height: 30px;
+            line-height: 30px;
+
+            padding: 0px 5px;
+            font-size: 13px;
+
+            background: -moz-linear-gradient(50% 100% 90deg, rgba(209, 229, 243, 1) 0%, rgba(236, 244, 250, 1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(209, 229, 243, 1) 0%, rgba(236, 244, 250, 1) 100%);
+            background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0, rgba(209, 229, 243, 1)), color-stop(1, rgba(236, 244, 250, 1)));
+            background: -o-linear-gradient(90deg, rgba(209, 229, 243, 1) 0%, rgba(236, 244, 250, 1) 100%);
+            background: -ms-linear-gradient(90deg, rgba(209, 229, 243, 1) 0%, rgba(236, 244, 250, 1) 100%);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E5F3', endColorstr='#ECF4FA' ,GradientType=0)";
+            background: linear-gradient(0deg, rgba(209, 229, 243, 1) 0%, rgba(236, 244, 250, 1) 100%);
+            border-style: Solid;
+            border-color: #8AB1CB;
+            border-color: rgba(138, 177, 203, 1);
+            border-width: 1px;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECF4FA', endColorstr='#D1E5F3', GradientType=0);
+
+            .mk-name{
+              //background-color: #f0e90e;
+              width: 200px;
+              display: inline-block;
+            }
+
+            .mk-tishi {
+              position: absolute;
+              right: 3px;
+              top: 2px;
+              *top: 5px;
+              span {
+                display: inline-block;
+                margin-right: 5px;
+
+              }
+            }
+
+          }
+          p {
+            .round(3px);
+            background-color: #ffffff;
+            min-height: 70px;
+            height: auto;
+            border: 1px #E6E6E6 solid;
+            margin-top: 3px;
+            font-size: 12px;
+            padding: 9px;
+            color: #333333;
+            line-height: 1.5;
+            display: none;
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+/*消息提醒*/
+
+.xiaoxi-xianshi {
+  .round(3px);
+  position: absolute;
+  width: 300px;
+  height: 105px;
+  *height: 113px;
+  background: #E5E5E5;
+  background: rgba(229, 229, 229, 1);
+  border-style: Solid;
+  border-color: #666666;
+  border-color: rgba(102, 102, 102, 1);
+  border-width: 1px;
+  bottom: 10px;
+  right: 270px;
+  li {
+    margin: 10px;
+  }
+  ol {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    *top: 10px;
+    color: #f00217;
+  }
+  .biaoti {
+    font-size: 13px;
+  }
+  .neirong {
+    height: 50px;
+    background: #FFFFFF;
+    background: rgba(255, 255, 255, 1);
+    border-style: Solid;
+    border-color: #CBCBCB;
+    border-color: rgba(203, 203, 203, 1);
+    border-width: 1px;
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+
